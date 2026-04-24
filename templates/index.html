@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Fraud Detection</title>
+    <style>
+        body { font-family: Arial; text-align: center; }
+        input { margin: 5px; padding: 5px; width: 200px; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+
+<body>
+
+<h1>💳 Credit Card Fraud Detection</h1>
+
+<form action="/predict" method="post">
+
+    <!-- V1 to V28 -->
+    <script>
+        for (let i = 1; i <= 28; i++) {
+            document.write(`<input type="text" name="V${i}" placeholder="V${i}" required><br>`);
+        }
+    </script>
+
+    <!-- Amount -->
+    <input type="text" name="Amount" placeholder="Amount" required><br><br>
+
+    <button type="submit">Predict</button>
+
+</form>
+
+<h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
