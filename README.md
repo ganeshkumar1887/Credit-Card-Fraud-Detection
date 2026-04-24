@@ -16,3 +16,6 @@ Credit Card Fraud Detection using Logistic Regression and Flask for real-time pr
 1. pip install -r requirements.txt
 2. python app.py
 3. Open localhost in browser
+## Project Preview
+
+![CCFD](CCFD.png)
